@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form elements</title>
+  </head>
+  <body>
+    <form autocomplete="off" novalidate>
+      <div>
+        <label for="firstname">Firstname</label> <br />
+        <input
+          type="text"
+          id="firstname"
+          placeholder="Type your firstname"
+          name="firstname"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Type your email"
+        />
+      </div>
+
+      <div>
+        <label for="password">Password</label> <br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Type your password"
+          name="password"
+        />
+      </div>
+
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other" />
+      </div>
+
+      <div>
+        <label>What is your favorite music genres</label>
+        <br />
+        <label for="rock">
+          Rock
+          <input type="checkbox" name="taste" value="rock" id="rock" checked />
+        </label>
+        <label for="pop">
+          Pop
+          <input type="checkbox" name="taste" value="pop" id="pop" />
+        </label>
+        <label for="hiphop">
+          Hip-hop
+          <input type="checkbox" name="taste" value="hiphop" id="hiphop" />
+        </label>
+        <label for="mugham">
+          Mugham
+          <input type="checkbox" name="taste" value="mugham" id="mugham" />
+        </label>
+      </div>
+
+      <div>
+        <label for="hobbit">Hobbit</label>
+        <select name="hobbit" id="hobbit" multiple>
+          <option value="driving">Driving is a very good hobby</option>
+          <option value="swimming">Swimming</option>
+          <option value="coding">Coding</option>
+          <option value="horse-riding">Horse riding</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="birthdate">Birthdate</label>
+        <!-- year - month - day  - value=2014-02-09-->
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+
+      <div>
+        <label for="meeting-date">Meeting date</label>
+        <input type="time" name="meeting-date" id="meeting-date" />
+      </div>
+
+      <div>
+        <label for="profile-image">Profile image</label>
+        <input
+          type="file"
+          name="profile-image"
+          id="profile-image"
+          accept=".pdf"
+        />
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+      <button type="submit">Submit 2</button>
+
+      <!-- <button type="submit">Submit</button> -->
+    </form>
+    <noscript>You need to enable javascript to see this page</noscript>
+  </body>
+</html>
